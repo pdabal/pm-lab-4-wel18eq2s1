@@ -12,7 +12,7 @@ uint16_t ADCsingleREAD(uint8_t adcToUse){
 	ADMUX &= ~(1 << ADLAR);
 	ADCSRA |= (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
 	ADCSRA |= (1 << ADEN);
-	ADCSRA |= (1 << ADSC);
+	ADCSRA |= (1 << ADSC); 
 	while (ADCSRA & (1 << ADSC))
 		;
 	ADCval = ADCL;
