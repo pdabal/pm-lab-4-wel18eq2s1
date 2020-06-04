@@ -1,19 +1,19 @@
-#include <avr/io.h>
-#include <avr/interrupt.h>
+#include <Arduino.h>
+#define ADC_RES_DEF (5.0f / 1024.0f)
 
-int main(void) {
-  DDRD &= ~(1 << DDD5);
-  PORTD |= (1 << PORTD5);
-  TIMSK1 |= (1 << TOIE1);
-  TCCR1B |= (1 << CS12) | (1 << CS11) | (1 << CS10);
-  sei();
-
-  while (1)
-  {
-
-  }
+void setup() {
+  Serial.begin(9600);
+  analogReference(DEFAULT);
+  pinMode(A5, INPUT);
 }
 
-ISR(TIMER1_OVF_vect) {
-	PORTC &~(1<<PORTC1);
+void loop() {
+  uint16_t digital = analogRead(A5);
+  float voltage = ADC_RES_DEF * digital;
+  Serial.print("A5 = ");
+  Serial.print(digital);
+  Serial.print(" \t V(5) = ");
+  Serial.print(voltage);
+  Serial.println(" [V]");
+  delay(1000);
 }
