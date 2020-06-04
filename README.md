@@ -14,4 +14,4 @@ Grupa studencka: WELE18Q2S1
 
 # Odpowiedzi do pytań z instrukcji
 
-Zakończenie zajęć
+Zakończenie zajęć numer 4 - Przemysław Policht
