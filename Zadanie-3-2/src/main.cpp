@@ -1,9 +1,16 @@
 #include <Arduino.h>
+#define PIN_R 11
+#define PIN_G 9
+#define PIN_B 10
 
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(PIN_R, OUTPUT);
+  pinMode(PIN_G, OUTPUT);
+  pinMode(PIN_B, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
+  analogWrite(PIN_R, rand());
+  analogWrite(PIN_G, rand());
+  analogWrite(PIN_B, rand());
+  delay(1000);}
