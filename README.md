@@ -12,6 +12,7 @@ Imię i nazwisko studenta: Kacper Janowski
 Numer albumu: 71980  
 Grupa studencka: WEL18EQ2S1
 
+
 # Odpowiedzi do pytań z instrukcji
 
 ...
