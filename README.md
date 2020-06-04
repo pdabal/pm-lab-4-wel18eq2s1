@@ -10,7 +10,7 @@ Data: 04.06.2020 r.
 
 Imię i nazwisko studenta: Karol Szeliga
 Numer albumu: 72028
-Grupa studencka: WELE18Q2S1
+Grupa studencka: WEL18Q2S1
 
 # Odpowiedzi do pytań z instrukcji
 
